@@ -25,7 +25,7 @@
 
   <body>
 
-    
+
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
@@ -40,9 +40,9 @@
 @include('_partials/header')
 @include('_partials/hero')
 
-     
-      
-  
+
+
+
       @yield('content')
 
     <div class="site-section">
@@ -50,7 +50,7 @@
         <div class="row">
           <div class="col-lg-7">
             <h2 class="section-heading"><strong>Features</strong></h2>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>    
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
 
@@ -138,7 +138,7 @@
         <div class="row">
           <div class="col-lg-7">
             <h2 class="section-heading"><strong>Testimonials</strong></h2>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>    
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="row">
@@ -202,7 +202,7 @@
       </div>
     </div>
 
-      
+
       <footer class="site-footer">
         <div class="container">
           <div class="row">

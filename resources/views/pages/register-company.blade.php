@@ -3,26 +3,30 @@
 @section('content')
 
 
-<form class="w-25 m-auto text-center font-weight-bold">
-    
+<form method="POST" action="{{url ('/store')}}" class="w-25 m-auto text-center font-weight-bold">
+
+@csrf
   <div class="form-group">
-    <label for="exampleInputname1">Įmonės pavadinimas</label>
-    <input type="text" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Įveskite pavadinimą">
+    <label for="title">Įmonės pavadinimas</label>
+    <input type="text" class="form-control text-center" id="name" name="name" placeholder="Įveskite pavadinimą">
   </div>
   <div class="form-group">
-    <label for="exampleInputcode" style="text-center">Kodas</label>
-    <input type="text" class="form-control text-center" id="exampleInputPassword1" placeholder="Įveskite kodą">
+    <label for="exampleInputcode">Kodas</label>
+    <input type="text" class="form-control text-center" id="code" name="code" placeholder="Įveskite kodą">
   </div>
   <div class="form-group">
     <label for="exampleInputadress">Adresas</label>
-    <input type="text" class="form-control text-center" id="exampleInputadresas" placeholder="Įveskite kodą">
+    <input type="text" class="form-control text-center" id="adress"  name="adress" placeholder="Įveskite kodą">
   </div>
   <div class="form-group">
     <label for="exampleInputdesc">Aprašymas</label>
-    <input type="text" class="form-control text-center" id="exampleInputdesc" placeholder="Aprašymas">
+    <input type="text" class="form-control text-center" id="description" name="description" placeholder="Aprašymas">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</container>
+
 </form>
 
 @endsection
+
+
+

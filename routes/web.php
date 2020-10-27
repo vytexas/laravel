@@ -16,4 +16,16 @@ use App\Http\Controllers\CompanyController;
 
 Route::get('/', 'App\Http\Controllers\CompanyController@index');
 Route::get('/register', 'App\Http\Controllers\CompanyController@registerCompany');
+
+
+
+
+Route::post('/store', 'App\Http\Controllers\CompanyController@registerstore'); //saugo irasa
+
+Route::get('delete/{id}','App\Http\Controllers\CompanyController@delete')->name("delete-firm"); //trina irasa
+Route::get('edit/{id}','App\Http\Controllers\CompanyController@editFirm')->name("edit-firm"); //redaguoja irasa
+
+Route::post('update-firm/{id}','App\Http\Controllers\CompanyController@update')->name("update-firm");
+
+
 // Route::get('/portfolio', 'App\Http\Controllers\CompanyController@portfolio');
